@@ -1,7 +1,7 @@
 provider "aws" {
     profile = "default"
-    region = "us-east-1"  
-}
+    region =   var.region
+}    
 
 # CREATE THE VPC
 
@@ -64,5 +64,3 @@ resource "aws_default_route_table" "private" {
 # www
 # dev
 # D8atabase
-
-
